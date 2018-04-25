@@ -1,0 +1,302 @@
+.content {
+	text-align: justify;
+	line-height: 2em;
+}
+	@media (min-width: 1000px) {
+		.content {
+			font-family: 'Titillium Web', sans-serif;
+			font-weight: 300;
+			color: black;
+		}
+	}
+
+
+.header-content {
+	text-align: center;
+	color: rgb(70, 155, 70);
+	text-shadow: 2px 2px 15px rgba(255, 255, 255, 1);
+}
+
+.texto-moima, .blog-moima {
+	min-height: 300px;
+	border-radius: 10%;
+	padding: 0 1em;
+}
+
+.texto-moima .text {
+	font-size: 0.9em;
+	font-weight: 800;
+	color: #fff;
+	display: inline;
+	text-shadow: 0.4px 0.4px 1px rgba(0, 0, 0, 0.4);
+}
+
+@media (min-width: 1000px) {
+	.texto-moima .text {
+		font-size: 1.1em;
+		line-height: 1.8;
+		color: black;
+		text-shadow: 2px 2px 10px #efefef;
+	}
+}
+
+
+#slideshow > div {
+	border-bottom: 1em solid #abdfab;
+}
+
+.first-row {
+	box-sizing: border-box;
+	min-height: 600px;
+	background-image: url("../img/hq/milan-popovic-493722.jpg");
+	background-size: cover;
+	border-bottom: 1em solid #ccffcc;
+	background-attachment: fixed;
+}
+
+
+/* Definição das colunas para desktop */
+@media (min-width: 1000px) {
+	.col {
+		position: static;
+		display: inline-block;
+		width: 44%;
+		float: left;
+		margin: 2em 1.75em 4em 1.75em;
+		background-color: rgba(255, 255, 255, 0.3);
+	}
+}
+
+.logo-texto {
+	width: 25%;
+	display: block;
+	margin: 0 auto;
+	float: right;
+}
+	@media (min-width: 1000px) {
+		.logo-texto {
+			position: relative;
+			bottom: 0;
+			width: 10%;
+		}
+	}
+
+
+.blog-moima {
+	text-align: center;
+	margin: 5em 0;
+	position: static;
+	display: block;
+}
+
+@media (min-width: 1000px) {
+	.blog-moima {
+		margin: 2em 1.75em 4em 1.75em;
+	}
+}
+
+.blog-moima li {
+	margin-top: 0.1em;
+	margin-bottom: 0.5em;
+	padding: 0.6em;
+}
+
+.blog-moima li:nth-of-type(even) {
+	background-color: #f0faed;
+}
+.blog-moima li:nth-of-type(odd) {
+	background-color: #bde4aa;
+}
+
+
+.blog-moima a {
+	margin-bottom: 1em;
+}
+
+.blog-moima .titulo-post {
+	font-size: 1.25em;
+	border-bottom: 1px solid #aaa;
+}
+
+
+.mySlides {
+    display: none;
+    margin: 5em 0;
+}
+
+.text {
+  color: black;
+  font-size: 1.35em;
+  font-weight: 800;
+  width: 100%;
+  text-align: center;
+}
+
+.row-produtos {
+	min-height: 800px;
+	width: 100%;
+	display: block;
+	margin: 0;
+	background: linear-gradient(to bottom, #fceae9, #ffffff);
+}
+
+@media (min-width: 1000px) {
+	.row-produtos {
+		min-height: 200px;
+	}
+	
+}
+
+
+.produtos-container {
+	min-height: 450px;
+	width: 200px;
+	margin: 0 auto;
+}
+
+@media (min-width: 1000px) {
+	.produtos-container {
+		width: 100%;
+	}
+}
+
+.col-produtos {
+	width: 220px;
+	display: inline-block;
+	min-height: 225px;
+	margin: 1em 0;
+	border-radius: 5%;
+	padding: 1em;
+	border: 1px solid transparent;
+	box-shadow: 6px -5px 20px -4px rgba(79,115,91,1);
+}
+
+@media (min-width: 1000px) {
+	.col-produtos {
+		width: 300px;
+		min-height: 240px;
+		margin: 1em 0.5em;
+
+
+	}
+}
+
+.titulo-produto {
+	margin-top: 0.5em;
+	background-color: rgba(175, 212, 175, 0.5)
+}
+
+.desc-produto {
+	margin: 0.5em 0;
+	color: black;
+	font-size: 1em;
+	background-color: rgba(255, 255, 255, 0.5);
+	padding: 0.5em;
+	line-height: 2;
+	text-shadow: 2px 1px 3px #efefef;
+	font-weight: 450;
+	border-radius: 5%;
+}
+
+.graos {
+	background-image: url("../img/hq/michael-mroczek-440388.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+.farinaceos {
+	background-image: url("../img/hq/federica-diliberto-17923.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+.diversos {
+	background-image: url("../img/hq/jonathan-pielmayer-40070.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+.row-contato {
+	background: linear-gradient(to top, #fceae9, #ffffff);
+	color: black;
+}
+
+
+.col-localizacao iframe {
+	box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.1);
+	border-radius: 3%;
+}
+
+.map-large {
+	display: none;
+}
+@media (min-width: 1000px) {
+	.map-mobile {
+		display: none;
+	} .map-large {
+		display: initial;
+	}
+}
+
+@media (min-width: 1000px) {
+	.row-contato {
+		width: 100%
+	}
+	.col-contato {
+		height: 600px;
+		width: 65%;
+		margin: 0;
+		display: inline-block;
+	}
+	.col-localizacao {
+		width: 30%;
+		margin: auto;
+		display: inline-block;
+		float: right;
+	}
+	.col-localizacao iframe {
+		margin: 1em 0;
+	}
+	iframe {
+		margin: 0;
+	}
+	form {
+		width: 60%;
+		color: black;
+		display: inline-block;
+	}
+}
+
+input, textarea {
+	border: 0.1em solid #aabbaa;
+}
+
+/* Exibição em bloco do inputs do formulário no desktop */
+@media (min-width: 1000px) {
+	input {
+		display: block;
+		margin: 1em auto 0 auto;
+		width: 100%;
+		padding: 1em;
+	}
+}
+
+input:focus {
+	outline: 1px inset #ffefff;
+}
+
+.msg-contato {
+	width: 100%;
+	font-size: 1.5em;
+}
+
+@media (min-width: 1000px) {
+	.container-contato {
+		min-height: 450px;
+		width: 100%;
+		margin: 0 auto;
+	}
+}
+
+
+

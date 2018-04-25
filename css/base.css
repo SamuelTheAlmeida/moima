@@ -1,0 +1,61 @@
+html, body {
+	height: 100%;
+	margin: 0;
+	font-size: 0.9em;
+}
+
+body {
+	width: 100%;
+	font-family: 'Catamaran', sans-serif;
+}
+	@media (min-width: 1000px) {
+		body {
+			font-size: 1.10em;
+		}
+	}
+
+main {
+	width: 100%;
+	height: 100%;
+}
+
+strong {
+	font-weight: bold;
+}
+
+.container {
+	margin: 0 1.5em;
+	text-align: center;
+}
+	@media (min-width: 1000px) {
+		.container {
+			margin: 0 5em;
+			text-align: center;
+		}	
+	}
+
+.btn {
+	display: block;
+	width: 90%;
+	margin: 1em auto;
+	padding: 0.5em;
+	font-size: 1.15em;
+	background-color: green;
+	color: #efefef;
+	cursor: pointer;
+}
+	@media(min-width: 1000px) {
+		.btn {
+			width: 60%;
+		}
+	}
+
+hr {
+	height: 10px;
+	border: 0;
+	box-shadow: 0 10px 10px -10px #8dcf8b inset;
+}
+
+.first-letter {
+	font-size: 1.5em;
+}

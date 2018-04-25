@@ -1,0 +1,120 @@
+header {
+	width: 100%;
+	margin: 0 auto;
+	background-color: rgba(255, 255, 255, 0.9);
+	z-index: 1;
+	position: fixed;
+}
+
+.navbar-mobile {
+	position: fixed;
+	width: 80%;
+	height: 100%;
+	left: -80%;
+	z-index: 1;
+	transition: left 0.75s ease-out;
+	padding: 1em 0;
+	background-color: rgba(0, 0, 0, 0.9);
+	color: white;
+	font-size: 2.5em;
+}
+
+@media (min-width: 1000px) {
+	.navbar-mobile { 
+		left: 0;
+		position: fixed;
+		font-size: 1.1em;
+		background: white;
+		width: 100%;
+		z-index: -1;
+		height: auto;
+		text-transform: uppercase;
+		color: black;
+		font-weight: bold;
+	}
+}
+
+
+.navbar-mobile ul, .menu-close {
+	margin: 0 1em;
+}
+
+.navbar-mobile li{
+	text-decoration: none;
+}
+
+@media (min-width: 1000px) {
+	.navbar-mobile li {
+		display: inline;
+		padding: 0 1em;
+		margin: 0 0.3em;
+	}
+}
+
+
+.logo-header {
+	display: block;
+	margin: 0 auto;
+	width: 30%;
+	height: auto;
+	border-radius: 50%;
+}
+
+@media (min-width: 1000px) {
+	.logo-header {
+		width: 15%;
+	}
+}
+
+
+.menu {
+	position: absolute;
+	margin: 0.5em 0.1em;
+}
+
+	@media (min-width: 1000px) {
+		.menu {
+			display: none;
+		}
+	}
+
+
+.hamburger {
+	width: 3em;
+	height: 0.4em;
+	background-color: #111;
+	margin: 0.5em;
+	cursor: pointer;
+}
+
+
+.menu-close {
+	font-weight: 800;
+}
+
+@media (min-width: 1000px) {
+	.menu-close {
+		display: none;
+	}	
+}
+
+/* Posicionamento horizontal da navbar para desktop */
+@media (min-width: 1000px) {
+	.empresa, .produtos {
+		float: left;
+		margin: 0;
+	}
+
+	.empresa, .contato {
+		border-right: 0.3em solid rgb(200, 244, 220);
+	}
+
+	.blog, .contato {
+		float: right;
+	}
+}
+
+
+.menu-active .navbar-mobile {
+	left: 0;
+}
